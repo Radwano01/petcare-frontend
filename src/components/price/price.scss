@@ -1,0 +1,100 @@
+.price{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+    .title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(3, 3fr);
+        margin: auto;
+        
+        .card{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 10px;
+            background-color: #fff;
+            border-radius: 10px;
+            .img{
+                img{
+                    width: 325px;
+                    height: 200px;
+                    border-radius: 5px;
+                }
+            }
+
+            .type{
+                h4{
+                    color:rgba(69, 219, 0, 0.781);
+                }
+            }
+            .pack-price{
+                display: flex;
+
+                h1{
+                    font-size: 70px;
+                    sup{
+                        color: grey;
+                        font-size: 30px;
+                    }
+                    sub{
+                        color: grey;
+                        font-size: 15px;
+                    }
+                }
+            }
+            .sections{
+                padding-bottom: 40px;
+                ul{
+                    li{
+                        padding: 10px 100px;
+                    }
+                    li:nth-child(odd){
+                        background-color: rgba(128, 128, 128, 0.479);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1000px){
+    .price{
+        height: 250vh;
+        .cards{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+}
+
+@media screen and (max-width:649px){
+    .price{
+        height: 300vh;
+        .cards{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            .card{
+                .img{
+                    img{
+                        width: 300px;
+                    }
+                }
+            }
+        }
+    }
+}

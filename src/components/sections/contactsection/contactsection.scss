@@ -1,0 +1,122 @@
+.contactsection{
+    background-color: whitesmoke;
+    .slider-contact-section{
+        opacity: 5;
+        background: url("../../../assets/images/bg_2.jpg");
+        background-attachment: fixed;
+        height: 45vh;
+        
+    
+        .slider-contact-section-container{
+            opacity: 0.5;
+            height: 45vh;
+            background: linear-gradient(45deg, #207dff 0%, #00bd55 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+        }
+    }
+    
+    .contactsection-container{
+        height: 120vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .icons{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+        
+            .icon{
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                flex-direction: column;
+            }
+        }
+
+        .form{
+            background-color: white;
+            display: flex;
+            align-items: stretch;
+            justify-content: center;
+            
+    
+            .left{
+                margin: 50px;
+                form{
+                    .inputs{
+                        display: flex;
+                        align-items: stretch;
+                        justify-content: center;
+                        flex-direction: column;
+                        label{
+                            font-weight: normal;
+                            font-size: 12px;
+                            color: #00bd55;
+                            margin-top: 10px;
+                            margin-bottom: -6px;
+                        }
+                        input{
+                            width:500px;
+                            margin: 5px 5px 5px 0;
+                            padding: 25px 5px;
+                            border: none;
+                            border-bottom: 1px solid black;
+                        }
+                    }
+        
+                    textarea{
+                        border: none;
+                        padding:50px 5px;
+                        border-bottom: 1px solid black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1000px){
+    .contactsection{
+        .contactsection-container{
+            height: 150vh;
+            .icons{
+                display: grid;
+                grid-template-columns: repeat(2, 2fr);
+            }
+
+            .form{
+                width: 100%;
+                    .left{
+                        width: 50%;
+                        form{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: column;
+                            .inputs{
+                                input{
+                                    width: 200px;
+                                }
+                            }
+                            textarea{
+                                width: 200px;
+                            }
+           
+                        }
+                        .right{
+                            display: none;
+                        }
+                    }
+                    .right{
+                        display: none;
+                    }
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.testimonial-slider {
+    background: url("../../assets/images/bg_2.jpg");
+    background-attachment: fixed;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    .testimonial-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 30px;
+    }
+
+    .navigation {
+        button {
+            padding: 5px 20px;
+            margin: 10px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            color: rgba(69, 219, 0, 0.781);
+
+        }
+    }
+}
